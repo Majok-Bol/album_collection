@@ -1,4 +1,4 @@
-const galleryData = [
+export const galleryData = [
     {
         id: 1,
         title: "Neon Gridscape",
@@ -6,7 +6,7 @@ const galleryData = [
         inspiration: "A retro-futuristic world inspired by classic terminal interfaces and cyberpunk aesthetics.",
         artist: "BashBytes Team",
         category: "Digital Art",
-        date: "2025-07-01"
+
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ const galleryData = [
         inspiration: "A flower abstractly grown from binary trees — symbolizing Linux kernel development.",
         artist: "A. Byte",
         category: "Abstract",
-        date: "2025-06-28"
+
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ const galleryData = [
         inspiration: "An artist’s impression of escaping into the terminal, where commands open portals.",
         artist: "EchoArt",
         category: "Conceptual",
-        date: "2025-07-10"
+
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ const galleryData = [
         inspiration: "Inspired by the elegance of Bash scripting — combining form, flow, and logic.",
         artist: "BashBytes Collective",
         category: "Mixed Media",
-        date: "2025-07-04"
+
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ const galleryData = [
         inspiration: "A minimalist representation of network connectivity and digital communication.",
         artist: "PixelCoder",
         category: "Minimalism",
-        date: "2025-07-15"
+
     },
     {
         id: 6,
@@ -51,7 +51,7 @@ const galleryData = [
         inspiration: "A surreal interpretation of loss and discovery in the digital age.",
         artist: "Errorist",
         category: "Surrealism",
-        date: "2025-07-20"
+
     },
     {
         id: 7,
@@ -60,7 +60,7 @@ const galleryData = [
         inspiration: "A retro-futuristic world inspired by terminal grids and cyberpunk tones.",
         artist: "BashBytes Team",
         category: "Digital Art",
-        date: "2025-07-01"
+
     },
     {
         id: 8,
@@ -69,7 +69,7 @@ const galleryData = [
         inspiration: "A flower grown from binary logic — symbolizing the heart of Linux.",
         artist: "A. Byte",
         category: "Abstract",
-        date: "2025-06-28"
+
     },
     {
         id: 9,
@@ -78,7 +78,7 @@ const galleryData = [
         inspiration: "Escaping into a shell where commands spark imagination.",
         artist: "EchoArt",
         category: "Conceptual",
-        date: "2025-07-10"
+
     },
     {
         id: 10,
@@ -87,7 +87,7 @@ const galleryData = [
         inspiration: "Inspired by the elegance of Bash scripting — combining form, flow, and logic.",
         artist: "BashBytes Collective",
         category: "Mixed Media",
-        date: "2025-07-04"
+
     },
     {
         id: 11,
@@ -96,7 +96,7 @@ const galleryData = [
         inspiration: "Capturing the silence and success of a single ping in digital void.",
         artist: "PixelCoder",
         category: "Minimalism",
-        date: "2025-07-15"
+
     },
     {
         id: 12,
@@ -105,7 +105,7 @@ const galleryData = [
         inspiration: "A surreal take on loss, misdirection, and digital absence.",
         artist: "Errorist",
         category: "Surrealism",
-        date: "2025-07-20"
+
     },
     {
         id: 13,
@@ -114,7 +114,7 @@ const galleryData = [
         inspiration: "An abstract overload of knowledge, questions, and recursion.",
         artist: "LoopMage",
         category: "Abstract",
-        date: "2025-07-17"
+
     },
     {
         id: 14,
@@ -123,7 +123,7 @@ const galleryData = [
         inspiration: "Celebrating code as music — every character a note.",
         artist: "BashBytes Collective",
         category: "Digital Art",
-        date: "2025-07-12"
+
     },
     {
         id: 15,
@@ -132,7 +132,7 @@ const galleryData = [
         inspiration: "The unseen beauty of code that just works.",
         artist: "LexicalTuner",
         category: "Conceptual",
-        date: "2025-07-05"
+
     },
     {
         id: 16,
@@ -141,7 +141,7 @@ const galleryData = [
         inspiration: "The power and responsibility of having full control.",
         artist: "SudoBrush",
         category: "Digital Art",
-        date: "2025-07-02"
+
     },
     {
         id: 17,
@@ -150,7 +150,7 @@ const galleryData = [
         inspiration: "A chaotic explosion of memory, bits, and corruption.",
         artist: "CyberNova",
         category: "Abstract",
-        date: "2025-07-03"
+
     },
     {
         id: 18,
@@ -159,7 +159,7 @@ const galleryData = [
         inspiration: "Heartbeat of a machine interpreted through pixels.",
         artist: "BitCrafter",
         category: "Digital Art",
-        date: "2025-07-08"
+
     },
     {
         id: 19,
@@ -168,7 +168,7 @@ const galleryData = [
         inspiration: "A visual loop of typed commands and their reflections.",
         artist: "CLIArtist",
         category: "Mixed Media",
-        date: "2025-07-09"
+
     },
     {
         id: 20,
@@ -177,7 +177,7 @@ const galleryData = [
         inspiration: "Celebrating the modern developer's preferred aesthetic.",
         artist: "ByteShade",
         category: "Minimalism",
-        date: "2025-07-11"
+
     },
     {
         id: 21,
@@ -186,145 +186,145 @@ const galleryData = [
         inspiration: "A journey from silence to system — startup as art.",
         artist: "InitSketch",
         category: "Conceptual",
-        date: "2025-07-06"
+
     },
     {
-    id: 22,
-    title: "Neon Gridscape",
-    image: "https://images.unsplash.com/photo-1713463084491-6be1bd8e557a?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTU5fHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
-    inspiration: "A retro-futuristic world inspired by terminal grids and cyberpunk tones.",
-    artist: "BashBytes Team",
-    category: "Digital Art",
-    date: "2025-07-01"
-  },
-  {
-    id: 23,
-    title: "The Kernel Bloom",
-    image: "https://images.unsplash.com/photo-1617240016072-d92174e44171?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTcwfHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
-    inspiration: "A flower grown from binary logic — symbolizing the heart of Linux.",
-    artist: "A. Byte",
-    category: "Abstract",
-    date: "2025-06-28"
-  },
-  {
-    id: 24,
-    title: "Terminal Dreams",
-    image: "https://images.unsplash.com/photo-1744627550030-fba19e445d08?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTcyfHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
-    inspiration: "Escaping into a shell where commands spark imagination.",
-    artist: "EchoArt",
-    category: "Conceptual",
-    date: "2025-07-10"
-  },
-  {
-    id: 25,
-    title: "Shell & Soul",
-    image: "https://images.unsplash.com/photo-1639506523005-027d470613c1?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTgwfHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
-    inspiration: "Inspired by the elegance of Bash scripting — combining form, flow, and logic.",
-    artist: "BashBytes Collective",
-    category: "Mixed Media",
-    date: "2025-07-04"
-  },
-  {
-    id: 26,
-    title: "Minimal Ping",
-    image: "https://images.unsplash.com/photo-1610433572201-110753c6cff9?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTgzfHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
-    inspiration: "Capturing the silence and success of a single ping in digital void.",
-    artist: "PixelCoder",
-    category: "Minimalism",
-    date: "2025-07-15"
-  },
-  {
-    id: 27,
-    title: "404 Not Found",
-    image: "https://images.unsplash.com/photo-1693773852578-65cf594b62dd?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTkyfHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
-    inspiration: "A surreal take on loss, misdirection, and digital absence.",
-    artist: "Errorist",
-    category: "Surrealism",
-    date: "2025-07-20"
-  },
-  {
-    id: 28,
-    title: "Stack Overflow",
-    image: "https://images.unsplash.com/photo-1634836466795-2b71a032821c?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjAwfHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
-    inspiration: "An abstract overload of knowledge, questions, and recursion.",
-    artist: "LoopMage",
-    category: "Abstract",
-    date: "2025-07-17"
-  },
-  {
-    id: 29,
-    title: "Syntax Symphony",
-    image: "https://images.unsplash.com/photo-1623491351874-328be6ece829?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjE0fHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
-    inspiration: "Celebrating code as music — every character a note.",
-    artist: "BashBytes Collective",
-    category: "Digital Art",
-    date: "2025-07-12"
-  },
-  {
-    id: 30,
-    title: "The Silent Compiler",
-    image: "https://images.unsplash.com/photo-1672796026880-edc609812fd7?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjIwfHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
-    inspiration: "The unseen beauty of code that just works.",
-    artist: "LexicalTuner",
-    category: "Conceptual",
-    date: "2025-07-05"
-  },
-  {
-    id: 31,
-    title: "Neon Gridscape",
-    image: "https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzQyfHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
-    inspiration: "A retro-futuristic world inspired by classic terminal interfaces and cyberpunk aesthetics.",
-    artist: "BashBytes Team",
-    category: "Digital Art",
-    date: "2025-07-01"
-  },
-  {
-    id: 32,
-    title: "https://images.unsplash.com/photo-1636036766419-4e0e3e628acc?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzQ0fHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
-    image: "/images/kernel-bloom.png",
-    inspiration: "A flower abstractly grown from binary trees — symbolizing Linux kernel development.",
-    artist: "A. Byte",
-    category: "Abstract",
-    date: "2025-06-28"
-  },
-  {
-    id: 33,
-    title: "Terminal Dreams",
-    image: "https://images.unsplash.com/photo-1745829231479-ebbe5ceecfc8?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzUxfHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
-    inspiration: "An artist’s impression of escaping into the terminal, where commands open portals.",
-    artist: "EchoArt",
-    category: "Conceptual",
-    date: "2025-07-10"
-  },
-  {
-    id: 34,
-    title: "Shell & Soul",
-    image: "https://images.unsplash.com/photo-1636488363148-818c08eec89e?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzU5fHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
-    inspiration: "Inspired by the elegance of Bash scripting — combining form, flow, and logic.",
-    artist: "BashBytes Collective",
-    category: "Mixed Media",
-    date: "2025-07-04"
-  },
-  {
-    id: 35,
-    title: "Minimal Ping",
-    image: "https://images.unsplash.com/photo-1696360172919-f7fdaaa78a92?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzYwfHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
-    inspiration: "A minimalist representation of network connectivity and digital communication.",
-    artist: "PixelCoder",
-    category: "Minimalism",
-    date: "2025-07-15"
-  },
-  {
-    id: 36,
-    title: "404 Not Found",
-    image: "https://images.unsplash.com/photo-1639506522775-6719ae61bc10?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDE3fHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
-    inspiration: "A surreal interpretation of loss and discovery in the digital age.",
-    artist: "Errorist",
-    category: "Surrealism",
-    date: "2025-07-20"
-  }
+        id: 22,
+        title: "Neon Gridscape",
+        image: "https://images.unsplash.com/photo-1713463084491-6be1bd8e557a?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTU5fHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
+        inspiration: "A retro-futuristic world inspired by terminal grids and cyberpunk tones.",
+        artist: "BashBytes Team",
+        category: "Digital Art",
+
+    },
+    {
+        id: 23,
+        title: "The Kernel Bloom",
+        image: "https://images.unsplash.com/photo-1617240016072-d92174e44171?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTcwfHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
+        inspiration: "A flower grown from binary logic — symbolizing the heart of Linux.",
+        artist: "A. Byte",
+        category: "Abstract",
+
+    },
+    {
+        id: 24,
+        title: "Terminal Dreams",
+        image: "https://images.unsplash.com/photo-1744627550030-fba19e445d08?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTcyfHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
+        inspiration: "Escaping into a shell where commands spark imagination.",
+        artist: "EchoArt",
+        category: "Conceptual",
+
+    },
+    {
+        id: 25,
+        title: "Shell & Soul",
+        image: "https://images.unsplash.com/photo-1639506523005-027d470613c1?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTgwfHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
+        inspiration: "Inspired by the elegance of Bash scripting — combining form, flow, and logic.",
+        artist: "BashBytes Collective",
+        category: "Mixed Media",
+
+    },
+    {
+        id: 26,
+        title: "Minimal Ping",
+        image: "https://images.unsplash.com/photo-1610433572201-110753c6cff9?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTgzfHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
+        inspiration: "Capturing the silence and success of a single ping in digital void.",
+        artist: "PixelCoder",
+        category: "Minimalism",
+
+    },
+    {
+        id: 27,
+        title: "404 Not Found",
+        image: "https://images.unsplash.com/photo-1693773852578-65cf594b62dd?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTkyfHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
+        inspiration: "A surreal take on loss, misdirection, and digital absence.",
+        artist: "Errorist",
+        category: "Surrealism",
+
+    },
+    {
+        id: 28,
+        title: "Stack Overflow",
+        image: "https://images.unsplash.com/photo-1634836466795-2b71a032821c?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjAwfHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
+        inspiration: "An abstract overload of knowledge, questions, and recursion.",
+        artist: "LoopMage",
+        category: "Abstract",
+
+    },
+    {
+        id: 29,
+        title: "Syntax Symphony",
+        image: "https://images.unsplash.com/photo-1623491351874-328be6ece829?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjE0fHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
+        inspiration: "Celebrating code as music — every character a note.",
+        artist: "BashBytes Collective",
+        category: "Digital Art",
+
+    },
+    {
+        id: 30,
+        title: "The Silent Compiler",
+        image: "https://images.unsplash.com/photo-1672796026880-edc609812fd7?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjIwfHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
+        inspiration: "The unseen beauty of code that just works.",
+        artist: "LexicalTuner",
+        category: "Conceptual",
+
+    },
+    {
+        id: 31,
+        title: "Neon Gridscape",
+        image: "https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzQyfHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
+        inspiration: "A retro-futuristic world inspired by classic terminal interfaces and cyberpunk aesthetics.",
+        artist: "BashBytes Team",
+        category: "Digital Art",
+
+    },
+    {
+        id: 32,
+        title: "Abstract",
+        image: "/images/kernel-bloom.png",
+        inspiration: "A flower abstractly grown from binary trees — symbolizing Linux kernel development.",
+        artist: "A. Byte",
+        category: "Abstract",
+
+    },
+    {
+        id: 33,
+        title: "Terminal Dreams",
+        image: "https://images.unsplash.com/photo-1745829231479-ebbe5ceecfc8?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzUxfHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
+        inspiration: "An artist’s impression of escaping into the terminal, where commands open portals.",
+        artist: "EchoArt",
+        category: "Conceptual",
+
+    },
+    {
+        id: 34,
+        title: "Shell & Soul",
+        image: "https://images.unsplash.com/photo-1636488363148-818c08eec89e?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzU5fHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
+        inspiration: "Inspired by the elegance of Bash scripting — combining form, flow, and logic.",
+        artist: "BashBytes Collective",
+        category: "Mixed Media",
+
+    },
+    {
+        id: 35,
+        title: "Minimal Ping",
+        image: "https://images.unsplash.com/photo-1696360172919-f7fdaaa78a92?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzYwfHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
+        inspiration: "A minimalist representation of network connectivity and digital communication.",
+        artist: "PixelCoder",
+        category: "Minimalism",
+
+    },
+    {
+        id: 36,
+        title: "404 Not Found",
+        image: "https://images.unsplash.com/photo-1639506522775-6719ae61bc10?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDE3fHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
+        inspiration: "A surreal interpretation of loss and discovery in the digital age.",
+        artist: "Errorist",
+        category: "Surrealism",
+
+    }
 
 
 ];
-console.log("Length: ",galleryData.length);
-console.log("Gallery data: ",galleryData);
+console.log("Length: ", galleryData.length);
+console.log("Gallery data: ", galleryData);
