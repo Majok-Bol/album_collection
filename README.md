@@ -1,2 +1,2 @@
 # album_collection
-Sample photos gallery
+Gallery Collection Page
