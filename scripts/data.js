@@ -38,7 +38,7 @@ export const galleryData = [
     {
         id: 5,
         title: "Minimal Ping",
-        image: "https://plus.unsplash.com/premium_photo-1748880489520-3d0c5a39d4a0?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODV8fGNvbXB1dGVyJTIwZ2FsbGVyeXxlbnwwfHwwfHx8MA%3D%3D",
+        image: "https://images.unsplash.com/photo-1627160280085-2dbb99a7c4ff?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTZ8fGNvbXB1dGVyJTIwZ2FsbGVyeXxlbnwwfHwwfHx8MA%3D%3D",
         inspiration: "A minimalist representation of network connectivity and digital communication.",
         artist: "PixelCoder",
         category: "Minimalism",
@@ -47,7 +47,7 @@ export const galleryData = [
     {
         id: 6,
         title: "404 Not Found",
-        image: "https://images.unsplash.com/photo-1570873755554-3471c42de519?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fGNvbXB1dGVyJTIwZ2FsbGVyeXxlbnwwfHwwfHx8MA%3D%3D",
+        image: "https://images.unsplash.com/photo-1629148769165-069e8a9e8a30?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTgyfHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
         inspiration: "A surreal interpretation of loss and discovery in the digital age.",
         artist: "Errorist",
         category: "Surrealism",
@@ -101,7 +101,7 @@ export const galleryData = [
     {
         id: 12,
         title: "404 Not Found",
-        image: "https://images.unsplash.com/photo-1658856039235-7745824f88db?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE2fHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
+        image: "https://images.unsplash.com/photo-1723792306904-c417c0da40e3?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTR8fGNvbXB1dGVyJTIwZ2FsbGVyeXxlbnwwfHwwfHx8MA%3D%3D",
         inspiration: "A surreal take on loss, misdirection, and digital absence.",
         artist: "Errorist",
         category: "Surrealism",
@@ -128,7 +128,7 @@ export const galleryData = [
     {
         id: 15,
         title: "The Silent Compiler",
-        image: "https://images.unsplash.com/photo-1599939570150-ae85e8432985?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM0fHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
+                image: "https://images.unsplash.com/photo-1643131747793-1b103cc66c6b?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM4fHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
         inspiration: "The unseen beauty of code that just works.",
         artist: "LexicalTuner",
         category: "Conceptual",
@@ -146,7 +146,7 @@ export const galleryData = [
     {
         id: 17,
         title: "Buffer Overflow",
-        image: "https://images.unsplash.com/photo-1643131747793-1b103cc66c6b?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM4fHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
+        image: "https://images.unsplash.com/photo-1549930585-0e530dd1afd4?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAzfHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
         inspiration: "A chaotic explosion of memory, bits, and corruption.",
         artist: "CyberNova",
         category: "Abstract",
@@ -164,7 +164,7 @@ export const galleryData = [
     {
         id: 19,
         title: "Command Echo",
-        image: "https://images.unsplash.com/photo-1603481546238-487240415921?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQ0fHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
+        image: "https://images.unsplash.com/photo-1720969837856-6a25a6428e0a?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI2fHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
         inspiration: "A visual loop of typed commands and their reflections.",
         artist: "CLIArtist",
         category: "Mixed Media",
@@ -173,7 +173,7 @@ export const galleryData = [
     {
         id: 20,
         title: "Dark Mode Muse",
-        image: "https://images.unsplash.com/photo-1590109738246-2af866338d35?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTUyfHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
+        image: "https://images.unsplash.com/photo-1658856039235-7745824f88db?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE2fHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
         inspiration: "Celebrating the modern developer's preferred aesthetic.",
         artist: "ByteShade",
         category: "Minimalism",
@@ -200,7 +200,7 @@ export const galleryData = [
     {
         id: 23,
         title: "The Kernel Bloom",
-        image: "https://images.unsplash.com/photo-1617240016072-d92174e44171?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTcwfHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
+        image: "https://images.unsplash.com/photo-1670960612763-1b05cb98c39b?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGNvbXB1dGVyJTIwZ2FsbGVyeXxlbnwwfHwwfHx8MA%3D%3D",
         inspiration: "A flower grown from binary logic — symbolizing the heart of Linux.",
         artist: "A. Byte",
         category: "Abstract",
@@ -236,6 +236,7 @@ export const galleryData = [
     {
         id: 27,
         title: "404 Not Found",
+
         image: "https://images.unsplash.com/photo-1693773852578-65cf594b62dd?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTkyfHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
         inspiration: "A surreal take on loss, misdirection, and digital absence.",
         artist: "Errorist",
@@ -263,7 +264,8 @@ export const galleryData = [
     {
         id: 30,
         title: "The Silent Compiler",
-        image: "https://images.unsplash.com/photo-1672796026880-edc609812fd7?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjIwfHxjb21wdXRlciUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D",
+
+        image: "https://images.unsplash.com/photo-1670771956869-d94bdddbc7a3?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGNvbXB1dGVyJTIwZ2FsbGVyeXxlbnwwfHwwfHx8MA%3D%3D",
         inspiration: "The unseen beauty of code that just works.",
         artist: "LexicalTuner",
         category: "Conceptual",
