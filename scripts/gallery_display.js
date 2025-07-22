@@ -7,7 +7,7 @@ gallery.innerHTML="";
 localStorage.setItem("galleryData",JSON.stringify(galleryData));
 galleryData.forEach((product)=>{
     //test if data is being displayed
-    console.log("Gallery titles: ",product.title);
+    console.log("Gallery titles: ",product.image);
     gallery.innerHTML+=`
     <div class='card'>
     <h2>${product.title}</h2>

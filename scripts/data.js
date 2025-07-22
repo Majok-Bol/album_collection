@@ -281,7 +281,7 @@ export const galleryData = [
     {
         id: 32,
         title: "Abstract",
-        image: "/images/kernel-bloom.png",
+        image: "https://plus.unsplash.com/premium_photo-1663050681752-4c95effcca58?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGNvbXB1dGVyJTIwZ2FsbGVyeXxlbnwwfHwwfHx8MA%3D%3D",
         inspiration: "A flower abstractly grown from binary trees — symbolizing Linux kernel development.",
         artist: "A. Byte",
         category: "Abstract",
