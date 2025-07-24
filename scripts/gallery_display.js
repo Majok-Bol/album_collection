@@ -31,8 +31,25 @@ function loadMoreGallery(){
     const end=startIndex+endIndex;
     const slicedData=storedGalleryData.slice(startIndex,startIndex+endIndex);
     console.log("Sliced data: ",slicedData);
+    slicedData.forEach((product)=>{
+    //update the html data
+gallery.innerHTML+=`
+<div class='card'>
+<h2>${product.title}</h2>
+<img src="${product.image}"/>
+<p>${product.inspiration}</p>
+<p>${product.artist}</p>
+<p>${product.category}</p>
+</div>
+`
+    })
+
     //update the counter
     startIndex+=endIndex;
+    //disable loadmore button if no more items to load
+    if(startIndex>storedGalleryData.length){
+        loadMore.disabled=true;
+    }
 }
 //add event listenr to load more button
 loadMore.addEventListener("click",loadMoreGallery);
