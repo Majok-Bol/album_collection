@@ -1,6 +1,6 @@
 body {
-margin:0;
-padding:0;
+    margin: 0;
+    padding: 0;
 
 
 }
@@ -24,9 +24,22 @@ padding:0;
 
 
 }
-.card img{
-    width:100%;
+
+.card img {
+    width: 100%;
     height: auto;
-    display:block;
+    display: block;
     object-fit: cover;
+}
+
+.favorite-icon {
+    font-size: 3rem;
+    color: #e60023;
+    border: none;
+    background: none;
+
+
+}
+button{
+cursor: pointer;
 }
