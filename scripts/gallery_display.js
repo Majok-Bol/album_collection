@@ -39,6 +39,7 @@ slicedData.forEach((product) => {
     let endIndex = 3;
     //function to load more items dynamically on demand
     function loadMoreGallery() {
+  
         const end = startIndex + endIndex;
         const slicedData = storedGalleryData.slice(startIndex, startIndex + endIndex);
         console.log("Sliced data: ", slicedData);
