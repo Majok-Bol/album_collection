@@ -18,12 +18,16 @@ favoritesData.forEach((product)=>{
 })
 favorites.addEventListener("click",(e)=>{
     if(e.target.classList.contains("delete-btn")){
+        //load favorites
+    const favorites=JSON.parse(localStorage.getItem("favorites"))
         const productId=parseInt(e.target.id);
+        const newData=favorites.filter((product)=>product.id!==productId)
         const itemToRemove=e.target.closest(`.favorite-items[data-id="${productId}"`);
         console.log("Item to remove: ",itemToRemove);
         if(itemToRemove){
             itemToRemove.remove();
             alert("Item deleted");
+            localStorage.setItem("favorites",JSON.stringify(newData));
         }
     }
 })

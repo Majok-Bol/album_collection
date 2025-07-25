@@ -34,7 +34,6 @@ body {
 
 .favorite-icon {
     font-size: 3rem;
-    color: #e60023;
     border: none;
     background: none;
 
@@ -42,4 +41,7 @@ body {
 }
 button{
 cursor: pointer;
+}
+.favorite-icon.filled{
+    color:red;
 }

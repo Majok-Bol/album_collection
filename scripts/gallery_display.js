@@ -1,5 +1,5 @@
 import { galleryData } from "/scripts/data.js"
-window.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     const gallery = document.getElementById("gallery-data");
     const loadMore = document.getElementById("loadMore");
     gallery.innerHTML = "";
@@ -14,18 +14,27 @@ window.addEventListener("DOMContentLoaded", () => {
     const slicedData = storedGalleryData.slice(currentIndex, counter);
     console.log("First 3 products: ", slicedData);
     //display them on the page
-    slicedData.forEach((product) => {
-        gallery.innerHTML += `
+    //display them on the page
+// Load favorites from localStorage
+let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+slicedData.forEach((product) => {
+    const isFavorited = favorites.some(fav => fav.id === product.id);
+    const heartClass = isFavorited ? "favorite-icon filled" : "favorite-icon";
+    const heartSymbol = isFavorited ? "&#9829;" : "&#9825;";
+
+    gallery.innerHTML += `
 <div class='card'>
 <h2>${product.title}</h2>
 <img src="${product.image}"/>
 <p><strong>Inspiration: </strong>${product.inspiration}</p>
 <p><strong>Artist: </strong>${product.artist}</p>
 <p><strong>Category: </strong>${product.category}</p>
-<button class="favorite-icon" id="${product.id}">&#9829;</button>
+<button class="${heartClass}" id="${product.id}">${heartSymbol}</button>
 </div>
-`
-    });
+`;
+});
+
     let startIndex = 3;
     let endIndex = 3;
     //function to load more items dynamically on demand
@@ -33,19 +42,23 @@ window.addEventListener("DOMContentLoaded", () => {
         const end = startIndex + endIndex;
         const slicedData = storedGalleryData.slice(startIndex, startIndex + endIndex);
         console.log("Sliced data: ", slicedData);
-        slicedData.forEach((product) => {
-            //update the html data
-            gallery.innerHTML += `
+slicedData.forEach((product) => {
+    const isFavorited = favorites.some(fav => fav.id === product.id);
+    const heartClass = isFavorited ? "favorite-icon filled" : "favorite-icon";
+    const heartSymbol = isFavorited ? "&#9829;" : "&#9825;";
+
+    gallery.innerHTML += `
 <div class='card'>
 <h2>${product.title}</h2>
 <img src="${product.image}"/>
 <p><strong>Inspiration: </strong>${product.inspiration}</p>
 <p><strong>Artist: </strong>${product.artist}</p>
 <p><strong>Category: </strong>${product.category}</p>
-<button class="favorite-icon" id="${product.id}">&#9829;</button>
+<button class="${heartClass}" id="${product.id}">${heartSymbol}</button>
 </div>
-`
-        })
+`;
+});
+
 
         //update the counter
         startIndex += endIndex;
@@ -57,34 +70,30 @@ window.addEventListener("DOMContentLoaded", () => {
     //add event listenr to load more button
     loadMore.addEventListener("click", loadMoreGallery);
     //load items from local storage
-    let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
     console.log("Gallery fetched data: ", favorites);
     //add event listener to gallery div for event delegation
-    gallery.addEventListener("click", (e) => {
-        if (e.target.classList.contains("favorite-icon")) {
-            const favoriteProductId = parseInt(e.target.id);
-            console.log("Product id: ", favoriteProductId);
-            //get products that match that id from gallery data
-            const productMatched = galleryData.find((product) => product.id === favoriteProductId);
-            console.log("Matched products", productMatched);
-            if (productMatched) {
-                //check for duplicates
-                const duplicates = favorites.some((item) => item.id === productMatched.id);
-                if (!duplicates) {
-                    favorites.push(productMatched);
-                    //add to local storage
-                    localStorage.setItem("favorites", JSON.stringify(favorites));
-                    alert('Added to favorites');
+gallery.addEventListener("click", (e) => {
+    if (e.target.classList.contains("favorite-icon")) {
+        const button = e.target;
+        const favoriteProductId = parseInt(button.id);
+        button.classList.add("filled");
+        button.innerHTML = "&#9829;"; // filled heart
 
-                }else{
-                    alert("Already added to favorites list")
-                }
-            }else{
-                alert("Product not found");
+        const productMatched = galleryData.find((product) => product.id === favoriteProductId);
+
+        if (productMatched) {
+            const duplicates = favorites.some((item) => item.id === productMatched.id);
+            if (!duplicates) {
+                favorites.push(productMatched);
+                localStorage.setItem("favorites", JSON.stringify(favorites));
+                alert("Added to favorites");
+            } else {
+                alert("Already in favorites");
             }
-
-
-
         }
-    })
+    }
 })
+
+
+});
