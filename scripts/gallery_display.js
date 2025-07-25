@@ -73,27 +73,41 @@ slicedData.forEach((product) => {
 
     console.log("Gallery fetched data: ", favorites);
     //add event listener to gallery div for event delegation
+    // Favorite click handler
 gallery.addEventListener("click", (e) => {
     if (e.target.classList.contains("favorite-icon")) {
         const button = e.target;
-        const favoriteProductId = parseInt(button.id);
-        button.classList.add("filled");
-        button.innerHTML = "&#9829;"; // filled heart
+        const productId = parseInt(button.id);
 
-        const productMatched = galleryData.find((product) => product.id === favoriteProductId);
+        const isFavorited = button.classList.contains("filled");
 
-        if (productMatched) {
-            const duplicates = favorites.some((item) => item.id === productMatched.id);
-            if (!duplicates) {
-                favorites.push(productMatched);
+        if (isFavorited) {
+            // 💔 Remove from favorites
+            favorites = favorites.filter(fav => fav.id !== productId);
+            localStorage.setItem("favorites", JSON.stringify(favorites));
+
+            button.classList.remove("filled");
+            button.innerHTML = "&#9825;"; // Empty heart
+
+            alert("Removed from favorites");
+        } else {
+            // ❤️ Add to favorites
+            const matchedProduct = galleryData.find(p => p.id === productId);
+            if (matchedProduct && !favorites.some(fav => fav.id === productId)) {
+                favorites.push(matchedProduct);
                 localStorage.setItem("favorites", JSON.stringify(favorites));
+
+                button.classList.add("filled");
+                button.innerHTML = "&#9829;"; // Filled heart
+
                 alert("Added to favorites");
-            } else {
-                alert("Already in favorites");
             }
         }
     }
 })
-
-
 });
+
+
+
+
+
