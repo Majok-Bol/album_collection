@@ -15,7 +15,15 @@ body {
 
 }
 
-.card {
+#favorites {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.card,
+.favorite-items {
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
@@ -23,6 +31,13 @@ body {
     border-radius: 10px;
 
 
+}
+
+.favorite-items img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
 
 .card img {
@@ -39,9 +54,15 @@ body {
 
 
 }
-button{
-cursor: pointer;
+
+button {
+    cursor: pointer;
 }
-.favorite-icon.filled{
-    color:red;
+
+.favorite-icon.filled {
+    color: red;
+}
+
+a {
+    cursor: pointer;
 }
